@@ -121,7 +121,7 @@ vtkSmartPointer<vtkPolyData> ReadPolyData(const char *fileName)
   }
   else
   {
-    // If the user has not used a valid file type
+    // If the user has not used a valid file type, explain
     std::cerr << "Invalid file Type" << std::endl;
     std::cerr <<"Supported File Extensions: .ply, .vtp, .obj, .stl, .vtk, .g" << std::endl;
     exit(0);
